@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #E1E7ED;
   --foreground: #171717;
 }
 
@@ -12,15 +12,60 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+}
+
+.roboto-custom {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* .progress{
+  position: relative;
+  margin: 4px;
+  float:left;
+  text-align: center;
+}
+.barOverflow{
+  position: relative;
+  overflow: hidden; 
+  width: 90px; height: 45px;
+  margin-bottom: -14px; 
+}
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 90px; height: 90px; 
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid #eee;     
+  border-bottom-color: #0bf; 
+  border-right-color: #0bf;
+} */
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

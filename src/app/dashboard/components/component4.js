@@ -40,9 +40,9 @@ export default function Component4() {
     if (error) return <div>Error: {error.message}</div>;
 
     return (
-        <div className="p-4">
+        <div className="py-4 pr-3">
             <div className="rounded-2xl h-64">
-                <h4 className="text-lg mt-2 font-extrabold mb-2">Customers by device</h4>
+                <h4 className="text-lg font-extrabold mb-2 pl-4">Customers by device</h4>
                 <ResponsiveContainer width="100%" height="90%">
                     <LineChart
                         data={chartData}
@@ -51,7 +51,9 @@ export default function Component4() {
                             right: 20,
                             left: 0,
                             bottom: 5,
-                        }}>
+                        }}
+                        label={{ fontSize: 16 }}
+                        >
                         <CartesianGrid strokeDasharray="3 3" vertical={false} />
                         <XAxis dataKey="name" />
                         <YAxis />
@@ -64,14 +66,14 @@ export default function Component4() {
                             stroke="#8884d8"
                             activeDot={{ r: 8 }}
                             strokeWidth={2}
-                        />
+                            />
                         <Line
                             type="monotone"
                             dataKey="offline_sales"
                             name="Offline selling"
                             stroke="#82ca9d"
                             strokeWidth={2}
-                        />
+                            />
                     </LineChart>
                 </ResponsiveContainer>
             </div>

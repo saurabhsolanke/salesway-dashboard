@@ -21,7 +21,7 @@ export default function Component5() {
             {loading ? (
                 <div className="loader">Loading...</div>
             ) : (
-                <div className="p-5">
+                <div className="pt-5 px-5">
                     <span className="text-sm ">Community feedback</span>
                     <h3 className="text-lg font-extrabold">Mostly positive</h3>
                     <div className="flex mt-3">

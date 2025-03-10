@@ -1,10 +1,11 @@
+import Image from 'next/image';
 export default function Navbar() {
     return (
         <>
             <div className="flex w-full flex-col justify-between bg-white px-6 py-5 shadow-lg dark:bg-zinc-900 dark:shadow-black/5 lg:flex-row lg:items-center">
                 <div className="flex items-center">
                     <div className="flex h-10 w-10 items-center text-lg font-bold text-gray-700 dark:text-zinc-500">
-                        <img className="h-full w-full" src="https://res.cloudinary.com/pranav1421/image/upload/v1652785994/Tailwind-Component-library/Logo/tailwind-css_yizuxw.svg" alt="" />
+                        <Image src="/https://res.cloudinary.com/pranav1421/image/upload/v1652785994/Tailwind-Component-library/Logo/tailwind-css_yizuxw.svg" alt="Logo" width={100} height={50} priority />
                         <span className="px-2">tailwindcss</span>
                     </div>
                     <div className="flex w-full justify-end">

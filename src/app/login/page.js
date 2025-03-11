@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 export default function Page() {
     const router = useRouter();
     const [email, setEmail] = useState('');
@@ -29,7 +31,7 @@ export default function Page() {
         }
 
         try {
-            const response = await fetch("http://3.111.196.92:8020/api/v1/login/", {
+            const response = await fetch(`${API_BASE_URL}/api/v1/login/`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
